@@ -9,6 +9,7 @@ public class TablerosJavi {
 		int[][] tableroJ1 = new int[5][5];
 		int[][] tableroJ2 = new int[5][5];
 		
+		//Se rellena el tablero con 0, que es el agua.
 		for(int filas = 0 ; filas < tableroJ1.length ; filas++) {
 			
 			for(int columnas = 0 ; columnas < tableroJ2.length ; columnas++) {
@@ -18,6 +19,7 @@ public class TablerosJavi {
 				
 			}
 		}
+		//Se muestran los tableros.
 		System.out.println("Tablero 1");
 		
 		for(int filas = 0 ; filas < tableroJ1.length ; filas++) {
