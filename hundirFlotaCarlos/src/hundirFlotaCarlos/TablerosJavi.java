@@ -18,8 +18,18 @@ public class TablerosJavi {
 				
 			}
 		}
-		System.out.println(Arrays.deepToString(tableroJ2));
-		System.out.println(Arrays.deepToString(tableroJ1));
+		System.out.println("Tablero 1");
+		
+		for(int filas = 0 ; filas < tableroJ1.length ; filas++) {
+			System.out.println(Arrays.toString(tableroJ1[filas]));
+			
+		}
+		System.out.println("Tablero 2");
+		
+		for(int filas = 0 ; filas < tableroJ1.length ; filas++) {
+			System.out.println(Arrays.toString(tableroJ2[filas]));
+			
+		}
 		
  	}
 
