@@ -131,3 +131,4 @@ public class AlePosicionBarcos {
         tablero[fila][columna] = 1; 
         System.out.println("Barco colocado en la posición (" + fila + ", " + columna + ")");
     }
+}
