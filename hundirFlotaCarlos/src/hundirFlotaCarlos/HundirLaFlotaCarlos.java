@@ -43,6 +43,12 @@ public class HundirLaFlotaCarlos {
 		} else {
 			System.out.println("La coordenada seleccionada está fuera del tablero.");
 		}
+		
+		if(seleccionarCoordenada(tablero, filaSeleccionada, columnaSeleccionada)==1) {
+			System.out.println("Le has dado a un barco");
+		} else {
+			System.out.println("Agua");
+		}
 
 	}
 

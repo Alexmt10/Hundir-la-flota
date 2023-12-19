@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class AlePosicionBarcos {
+	
     public static void main(String[] args) {
         int[][] tableroJ1 = new int[5][5];
         int[][] tableroJ2 = new int[5][5];
