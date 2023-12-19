@@ -85,5 +85,7 @@ public class TablerosJavi {
 			System.out.println("Ha ganado el Jugador 2");
 		}
 	}
+	
+
 
 }
