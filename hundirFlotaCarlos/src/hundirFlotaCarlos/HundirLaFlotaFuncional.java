@@ -108,7 +108,7 @@ public class HundirLaFlotaFuncional {
 			} else {
 				System.out.println("La coordenada seleccionada está fuera del tablero.");
 			}
-			if (seleccionarCoordenada(tableroJ2, filaSeleccionada2, columnaSeleccionada2) == 1) {
+			if (seleccionarCoordenada(tableroJ1, filaSeleccionada2, columnaSeleccionada2) == 1) {
 				System.out.println("Le has dado a un barco");
 				tableroJ1[filaSeleccionada2][columnaSeleccionada2]=0;
 				contadorBarcosJ1--;
@@ -140,7 +140,7 @@ public class HundirLaFlotaFuncional {
 		// para contar cuantos quedan
 		for (int filas = 0; filas < tableroJ1.length; filas++) {
 
-			for (int columnas = 0; columnas < tableroJ2.length; columnas++) {
+			for (int columnas = 0; columnas < tableroJ1.length; columnas++) {
 
 				if (tableroJ1[filas][columnas] == 1) {
 					contadorBarcosJ1++;
