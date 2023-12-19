@@ -57,6 +57,7 @@ public class HundirLaFlotaFuncional {
 			}
 			if (seleccionarCoordenada(tableroJ2, filaSeleccionada, columnaSeleccionada) == 1) {
 				System.out.println("Le has dado a un barco");
+				tableroJ2[filaSeleccionada][columnaSeleccionada]=0;
 				contadorBarcosJ2--;
 			} else {
 				System.out.println("Agua");
@@ -88,6 +89,7 @@ public class HundirLaFlotaFuncional {
 			}
 			if (seleccionarCoordenada(tableroJ2, filaSeleccionada2, columnaSeleccionada2) == 1) {
 				System.out.println("Le has dado a un barco");
+				tableroJ1[filaSeleccionada2][columnaSeleccionada2]=0;
 				contadorBarcosJ1--;
 			} else {
 				System.out.println("Agua");
