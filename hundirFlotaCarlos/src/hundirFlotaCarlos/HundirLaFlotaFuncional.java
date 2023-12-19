@@ -26,6 +26,9 @@ public class HundirLaFlotaFuncional {
 
 		posicionbarcos1(tableroJ1);
 		posicionbarcos2(tableroJ2);
+		
+		boolean[][] coordenadasSeleccionadasJ1 = new boolean[5][5];
+		boolean[][] coordenadasSeleccionadasJ2 = new boolean[5][5];
 
 		do {
 
@@ -47,6 +50,15 @@ public class HundirLaFlotaFuncional {
 			int filaSeleccionada = sc.nextInt();
 			System.out.println("Seleccione la columna");
 			int columnaSeleccionada = sc.nextInt();
+			
+			while (coordenadasSeleccionadasJ1[filaSeleccionada][columnaSeleccionada]) {
+			        System.out.println("Ya has seleccionado esta coordenada. Elige otra.");
+			        System.out.println("Seleccione la fila");
+			        filaSeleccionada = sc.nextInt();
+			        System.out.println("Seleccione la columna");
+			        columnaSeleccionada = sc.nextInt();
+			    }
+			    coordenadasSeleccionadasJ1[filaSeleccionada][columnaSeleccionada] = true;
 
 			if (esCoordenadaValida(tableroJ2, filaSeleccionada, columnaSeleccionada)) {
 				int valorSeleccionado = seleccionarCoordenada(tableroJ1, filaSeleccionada, columnaSeleccionada);
@@ -79,6 +91,15 @@ public class HundirLaFlotaFuncional {
 			int filaSeleccionada2 = sc.nextInt();
 			System.out.println("Seleccione la columna");
 			int columnaSeleccionada2 = sc.nextInt();
+			
+			while (coordenadasSeleccionadasJ2[filaSeleccionada2][columnaSeleccionada2]) {
+		        System.out.println("Ya has seleccionado esta coordenada. Elige otra.");
+		        System.out.println("Seleccione la fila");
+		        filaSeleccionada2 = sc.nextInt();
+		        System.out.println("Seleccione la columna");
+		        columnaSeleccionada2 = sc.nextInt();
+		    }
+		    coordenadasSeleccionadasJ2[filaSeleccionada2][columnaSeleccionada2] = true;
 
 			if (esCoordenadaValida(tableroJ1, filaSeleccionada, columnaSeleccionada)) {
 				int valorSeleccionado2 = seleccionarCoordenada(tableroJ1, filaSeleccionada2, columnaSeleccionada2);
